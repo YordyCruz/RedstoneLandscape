@@ -22,14 +22,18 @@ header {
 }
 
 
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+}
 
-/* Updated Navigation CSS */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Changed from flex-end */
-    align-items: center;
-    padding: 1rem 2rem;
-    gap: 2rem;
+    flex-direction: column; /* Changed to column layout */
+    padding: 0;
 }
 .logo-container {
     display: flex;
@@ -118,6 +122,36 @@ header {
     background-color: #c80000;
 }
 
+/* Contact bar styling */
+.contact-bar {
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 0.8rem 2rem;
+    width: 100%;
+    order: 2; 
+}
+
+.contact-info {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.phone-number, .email-address {
+    color: #444;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.phone-number:hover, .email-address:hover {
+    color: #8B0000;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar {
@@ -125,23 +159,39 @@ header {
         gap: 1rem;
         padding: 1rem;
     }
-    
-    .company-name {
-        font-size: 1.5rem;
-        white-space: normal;
-        text-align: center;
-    }
-    
-    .nav-right {
-        flex-direction: column;
-        width: 100%;
-        margin-left: 0;
-
-    }
-    
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .phone-number, .email-address {
+        font-size: 0.85rem;
+    }
+    .nav-top {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .nav-right {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact-bar {
+        padding: 0.8rem 1rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .company-name {
+        text-align: center;
+        font-size: 1.4rem;
+        white-space: normal;
+    }
+    .quote-btn {
+        margin-top: 1rem;
     }
 }
 
