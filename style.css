@@ -622,29 +622,164 @@ header {
 
 /* Contact Section */
 .contact-section {
-    padding: 4rem 1rem;
-    background: #fafafa;
-    text-align: center;
+    padding: 6rem 2rem;
+    background: #fff8f8;
+    border-top: 3px solid #8B0000;
 }
 
-.contact-section h2 {
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-header h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.8rem;
+    color: #8B0000;
+    margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info-card,
+.service-areas-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-method {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: #8B0000;
+}
+
+.contact-details h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.contact-link {
+    font-size: 1.2rem;
+    color: #8B0000;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.contact-hours,
+.response-time {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.service-areas-card h3 {
+    color: #8B0000;
     margin-bottom: 1.5rem;
-    color: darkred;
+}
+
+.areas-list {
+    list-style: none;
+    padding: 0;
+}
+
+.areas-list li {
+    padding: 0.5rem 0;
+    color: #444;
+}
+
+.license-badge {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.emergency-banner {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    background: #8B0000;
+    color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.emergency-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.emergency-icon {
+    font-size: 2rem;
+}
+
+.emergency-banner a {
+    color: white;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .emergency-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 2rem 1rem;
-    background-color: #333;
-    color: #fff;
+    padding: 1rem 1rem;
+    background-color: transparent;
+    color: #000000;
     font-size: 0.9rem;
 }
 
 /* Footer Logo */
-.footer-logo-img {
-    height: 50px;
-    opacity: 0.9;
+.footer-logo {
+    background: transparent;
+    padding: 0.5px;
 }
 footer p {
     margin-bottom: 0.5rem;
@@ -687,5 +822,13 @@ footer p {
     
     .welcome-message h2 {
         font-size: 1.8rem;
+    }
+    .footer-branding {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        width: 80px;
     }
 }
