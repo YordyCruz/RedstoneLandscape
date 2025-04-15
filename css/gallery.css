@@ -46,6 +46,46 @@ header {
     margin: 0;
 
 }
+.mobile-menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #8B0000;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-menu-toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
+    }
+  
+    .nav-right {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .nav-right.active {
+      display: flex;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .quote-btn {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+    }
+  }
 
 .nav-right {
     display: flex;
