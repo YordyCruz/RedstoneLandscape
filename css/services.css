@@ -1,0 +1,100 @@
+/* Services Page Styles */
+
+.services-header {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  background: #fff8f8;
+}
+
+.services-header h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3rem;
+  color: #8B0000;
+  margin-bottom: 1rem;
+}
+
+.services-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+
+.service-card {
+  border: 2px solid #8B0000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  background: white;
+}
+
+.service-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-content {
+  padding: 1.5rem;
+}
+
+.service-content h3 {
+  font-size: 1.75rem;
+  color: #8B0000;
+  margin-bottom: 1.5rem;
+}
+
+.service-detail-block {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.service-detail-block h4 {
+  font-size: 1.2rem;
+  color: #8B0000;
+  margin-bottom: 0.5rem;
+}
+
+.service-detail-block p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .services-header h2 {
+    font-size: 2.2rem;
+  }
+  .services-subtitle {
+    font-size: 1rem;
+  }
+  .service-content h3 {
+    font-size: 1.25rem;
+  }
+}
