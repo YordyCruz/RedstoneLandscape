@@ -56,7 +56,7 @@
 
 .service-detail-block {
   margin-top: 2rem;
-  padding-top: 1rem;
+  padding-top: rem;
   border-top: 1px solid #eee;
 }
 
@@ -75,16 +75,20 @@
 .detail-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0 1rem; /* Added padding */
+
 }
 
 .detail-gallery img {
   width: 100%;
-  height: 180px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 0.5rem;
+
 }
 
 @media (max-width: 768px) {
@@ -96,5 +100,13 @@
   }
   .service-content h3 {
     font-size: 1.25rem;
+  }
+  detail-gallery {
+    gap: 1.5rem;
+    padding: 0;
+  }
+  .detail-gallery img {
+    height: 160px;
+    margin: 0;
   }
 }
